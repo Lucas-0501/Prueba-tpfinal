@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP FINAL INTEGRADOR UB</title>
+    <title>TP FINAL - Operaciones Octales</title>
     <link rel="stylesheet" href="../css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <nav class="navbar navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand navTitle" href="#">
-            <img src="./Logo_Univ_Belgrano_positivo_color.jpg" alt="" width="120" height="52" class="d-inline-block align-text-center">
-          </a>
-        </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand navTitle" href="../index.html">
@@ -82,13 +75,28 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-body">
-                        <h1 class="card-title text-center">Convertir Decimal a Binario</h1>
-                        <div class="mb-3">
-                            <label for="InputDecToBin" class="form-label">Número Decimal</label>
-                            <input type="text" id="InputDecToBin" class="form-control" placeholder="Ingresa número decimal">
+                        <h1 class="card-title text-center">Suma Octal</h1>
+                        <div class="mb-3 d-flex align-items-center justify-content-between">
+                            <input type="text" id="InputOctSum1" class="form-control w-48" placeholder="Número Octal 1">
+                            <span class="mx-2">+</span>
+                            <input type="text" id="InputOctSum2" class="form-control w-48" placeholder="Número Octal 2">
                         </div>
-                        <button onclick="DecToBin()" class="btn btn-danger w-100">Convertir</button>
-                        <p id="resultDecToBIn" class="mt-3 text-center"></p>
+                        <button onclick="EjectutarSumaOctal()" class="btn btn-danger w-100">Sumar</button>
+                        <p id="resultOctSum" class="mt-3 text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Resta Octal</h1>
+                        <div class="mb-3 d-flex align-items-center justify-content-between">
+                            <input type="text" id="InputOctResta1" class="form-control w-48" placeholder="Número Octal 1">
+                            <span class="mx-2">-</span>
+                            <input type="text" id="InputOctResta2" class="form-control w-48" placeholder="Número Octal 2">
+                        </div>
+                        <button onclick="EjectutarRestaOctal()" class="btn btn-danger w-100">Restar</button>
+                        <p id="resultOctResta" class="mt-3 text-center"></p>
                     </div>
                 </div>
             </div>
@@ -98,3 +106,4 @@
     <script src="../js/script.js"></script>
 </body>
 </html>
+

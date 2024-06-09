@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP FINAL INTEGRADOR UB</title>
+    <title>TP FINAL - Operaciones Hexadecimales</title>
     <link rel="stylesheet" href="../css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <nav class="navbar navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand navTitle" href="#">
-            <img src="./Logo_Univ_Belgrano_positivo_color.jpg" alt="" width="120" height="52" class="d-inline-block align-text-center">
-          </a>
-        </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand navTitle" href="../index.html">
@@ -53,11 +46,12 @@
                           Operaciones
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/OpBinaria.html">Suma y resta Binaria</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="../pages/OpOctal.html">Suma y resta Octal</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="../pages/OpHexa.html">Suma y resta Hexadecimal</a></li>
+                          <li><a class="dropdown-item" href="../pages/OpBinaria.html">Suma y resta Binaria</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/OpOctal.html">Suma y resta Octal</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/OpHexa.html">Suma y resta Hexadecimal</a></li>
+                          <li><hr class="dropdown-divider"></li>
                         </ul>
                     </li>
                 </ul>
@@ -82,13 +76,28 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-body">
-                        <h1 class="card-title text-center">Convertir Decimal a Binario</h1>
-                        <div class="mb-3">
-                            <label for="InputDecToBin" class="form-label">Número Decimal</label>
-                            <input type="text" id="InputDecToBin" class="form-control" placeholder="Ingresa número decimal">
+                        <h1 class="card-title text-center">Suma Hexadecimal</h1>
+                        <div class="mb-3 d-flex align-items-center justify-content-between">
+                            <input type="text" id="InputHexSum1" class="form-control w-48" placeholder="Número Hexadecimal 1">
+                            <span class="mx-2">+</span>
+                            <input type="text" id="InputHexSum2" class="form-control w-48" placeholder="Número Hexadecimal 2">
                         </div>
-                        <button onclick="DecToBin()" class="btn btn-danger w-100">Convertir</button>
-                        <p id="resultDecToBIn" class="mt-3 text-center"></p>
+                        <button onclick="EjectutarSumaHexadecimal()" class="btn btn-danger w-100">Sumar</button>
+                        <p id="resultHexSum" class="mt-3 text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Resta Hexadecimal</h1>
+                        <div class="mb-3 d-flex align-items-center justify-content-between">
+                            <input type="text" id="InputHexResta1" class="form-control w-48" placeholder="Número Hexadecimal 1">
+                            <span class="mx-2">-</span>
+                            <input type="text" id="InputHexResta2" class="form-control w-48" placeholder="Número Hexadecimal 2">
+                        </div>
+                        <button onclick="EjectutarRestaHexadecimal()" class="btn btn-danger w-100">Restar</button>
+                        <p id="resultHexResta" class="mt-3 text-center"></p>
                     </div>
                 </div>
             </div>
