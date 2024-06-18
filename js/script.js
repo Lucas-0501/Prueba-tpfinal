@@ -1,4 +1,4 @@
-// Funcio para convertir de binario a decimal
+// Funcion para convertir de binario a decimal
 function BinToDec() {
     const InputBinario = document.getElementById('InputBinToDec').value;
     const ResultDecimal = document.getElementById('resultBinToDec');
